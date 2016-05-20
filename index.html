@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Welcome</title>
+
+	<link rel="stylesheet" href="css/style.css">
+
+
+
+</head>
+	  <header class="searchMap">
+         <section class="plusSearch">
+	      <form class="form-search" method="get" action="#">
+            <input type="search" name="search" placeholder="I am looking for..">
+            <button type="submit">Search</button>
+            <i class="fa fa-search"></i>
+          </form>
+
+           <img src="img/btn-plus.png" onclick="addReview()">
+        </section>
+	  </header>
+
+    <div class="main-content">
+
+           <div class="addReview">
+           <form class="form-basic">
+
+            <div class="form-title-row">
+                <h1>Add Reviwe</h1>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Title</span>
+                    <input type="text" name="name" id="title">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Image URL</span>
+                    <input type="url" name="email" id="imgURL">
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Star Rate</span>
+                    <select name="dropdown" id="drop-val">
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                    </select>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <label>
+                    <span>Review</span>
+                    <textarea name="textarea" id="review"></textarea>
+                </label>
+            </div>
+
+            <div class="form-row">
+                <button type="submit" onclick="saveData()">Post Review</button>
+            </div>
+
+        </form>
+           </div>
+
+        <div class="frameMap">
+
+
+
+           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3381.2181295442433!2d34.788243711917104!3d32.06334848173653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151d4b70c9b85031%3A0x181fc288a3c23fb7!2z15fXldee15Qg15XXnteS15PXnCAyOSwg16rXnCDXkNeR15nXkSDXmdek15U!5e0!3m2!1siw!2sil!4v1461584204480" width="100%" height="150" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>
+
+       <section class="comments">
+
+       </section>
+
+
+
+    </div>
+<script src="js/javascript.js"></script>
+
+</body>
+
+</html>
